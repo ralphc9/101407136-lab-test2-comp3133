@@ -1,0 +1,40 @@
+/* Character Cards Grid */
+.character-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures exactly 4 columns */
+    gap: 16px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual Character Cards */
+  .character-card {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Mat-Card Adjustments */
+  mat-card {
+    width: 100%;
+    max-width: 250px; /* Keeps cards at a reasonable size */
+    text-align: center;
+  }
+  
+  mat-card img {
+    height: 200px;
+    object-fit: cover; /* Prevents image stretching */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 1024px) {
+    .character-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .character-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
+    }
+  }
+  

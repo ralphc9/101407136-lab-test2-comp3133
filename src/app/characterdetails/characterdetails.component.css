@@ -1,0 +1,18 @@
+mat-card {
+    max-width: 400px; /* Adjust the card size */
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  mat-card img {
+    width: 100%; /* Responsive width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Ensure images look good */
+    border-radius: 10px;
+  }
+  
+  mat-card-content {
+    text-align: left;
+    padding: 16px;
+  }
+  

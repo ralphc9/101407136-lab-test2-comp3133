@@ -1,0 +1,15 @@
+<div class="character-container">
+  <div *ngFor="let character of characters" class="character-card">
+    <div *ngIf="!selectedHouse || character.house === selectedHouse">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ character.name }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="character.image" alt="{{ character.name }}">
+        <mat-card-content>
+          <p>House: {{ character.house }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

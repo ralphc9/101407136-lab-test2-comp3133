@@ -1,0 +1,5 @@
+<mat-select (selectionChange)="onHouseChange($event.value)">
+    <mat-option *ngFor="let house of houses" [value]="house">{{ house }}</mat-option>
+  </mat-select>
+  
+  
