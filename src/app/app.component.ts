@@ -6,13 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  standalone: true, // Make AppComponent standalone
+  standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   imports: [
-    CharacterListComponent,  // Import CharacterListComponent here
+    CharacterListComponent,
     CharacterFilterComponent,
-    HttpClientModule // Import CharacterFilterComponent here
+    HttpClientModule
   ],
   providers:[CharacterService]
 })

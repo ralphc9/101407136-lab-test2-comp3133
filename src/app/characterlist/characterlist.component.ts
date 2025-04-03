@@ -31,7 +31,6 @@ export class CharacterListComponent implements OnInit {
 
   getCharacterDetails(id: number): void {
     console.log(`Character ID: ${id}`);
-    // Here you can add routing logic to navigate to the details page
   }
   
 }
